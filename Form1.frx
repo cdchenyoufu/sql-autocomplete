@@ -1,0 +1,11 @@
+Ì'Table: tblPositions
+    'Field1: ID
+    'Field2: Title
+    'Field3: supivisor
+    'Field4: salary
+    
+'Table: tblUsers
+    'Field1: ID
+    'Field2: name
+    'Field3: age
+    'Field4: address
