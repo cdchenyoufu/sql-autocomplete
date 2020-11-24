@@ -7,6 +7,7 @@ Class=CIntellisenseItem; CIntellisenseItem.cls
 Module=Module1; Module1.bas
 IconForm="Form1"
 Startup="Form1"
+ExeName32="sql-autocomplete.exe"
 Command32=""
 Name="Project1"
 HelpContextID="0"
@@ -31,3 +32,6 @@ Unattended=0
 Retained=0
 ThreadPerObject=0
 MaxNumberOfThreads=1
+
+[fastBuild]
+fullPath=%ap%\sql-autocomplete.exe

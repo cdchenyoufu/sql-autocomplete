@@ -15,11 +15,10 @@ behaviors:
    - CTRL Space auto complete partial table name or tableName.fieldName
    - CTRL Space at anytime will bring up table list
    - trigger auto suggest at proper times with proper context automatically (only)
+   - support for table aliases (parsed incrementally as you type and on big changes like paste)
 
 to do:
-   - bug in ocx: if last char of table name is numeric intellisense for fields will not fire
-   - handle table alias
-   - if only one table queried, auto suggest unqualified field names when context is right
+   - if only one table queried, auto suggest unqualified field names after WHERE, AND etc
 
 dependencies: (installed with pdfstreamdumper and yara workbench)
    - open source Scintilla syntax highlight control written in C (300kb to 1mb)
@@ -30,5 +29,10 @@ dependencies: (installed with pdfstreamdumper and yara workbench)
 
 discussion:
    https://www.vbforums.com/showthread.php?889424-sql-autocomplete-control
+
+
+bugs: 
+- ocx  "select * from tblpositions as t where t. - will auto complete title because its the only match in the list..
+- ocx  table names ending in numbers cause a problem
 
 </pre>
